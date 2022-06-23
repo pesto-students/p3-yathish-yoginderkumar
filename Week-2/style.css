@@ -1,0 +1,17 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.app_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+}
+
+.main_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
