@@ -11,6 +11,13 @@ body {
 }
 
 .main_container {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around; */
+    display: block;
+}
+
+.upper_container {
     display: flex;
     align-items: center;
     justify-content: space-around;
