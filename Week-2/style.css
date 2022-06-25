@@ -1,24 +1,73 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #1e425e;
+  font-family: "Open Sans", sans-serif;
 }
 .app_container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    flex-direction: column;
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .main_container {
-    /* display: flex;
-    align-items: center;
-    justify-content: space-around; */
-    display: block;
+  display: block;
 }
 
 .upper_container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+h1 {
+  color: #ade28a;
+}
+
+input {
+  height: 30px;
+  border-radius: 6px;
+  margin: 10px;
+  /* margin-left: 0px; */
+}
+
+h2 {
+  color: #ade28a;
+}
+
+h3 {
+  color: #edfa8b;
+}
+
+form > button {
+  height: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #ade28a;
+}
+
+strong {
+  color: #edfa8b;
+}
+
+em {
+  color: #edfa8b;
+}
+
+b {
+  color: #edfa8b;
 }
