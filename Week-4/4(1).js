@@ -45,11 +45,11 @@ class MyOwnPromise {
 
       // execute handlers if already attached
       this.executeHandlers();
-    }, 0);
+    }, 1000);
   }
 
-  addHandlers(handlers) {
-    this.handlers.push(handlers);
+  addHandlers(handler) {
+    this.handlers.push(handler);
     this.executeHandlers();
   }
 
@@ -131,10 +131,20 @@ class MyOwnPromise {
   }
 }
 
-function measure(promise) {
+function runPromiseWithTime(promise) {
   let start = performance.now();
-  promise.then(console.log).catch(console.error);
-  return performance.now() - start;
+  let end;
+  promise
+    .then((val) => {
+      console.log(val);
+      end = performance.now() - start;
+      console.log(`Resolve the promise in ${end}`);
+    })
+    .catch((err) => {
+      console.log(err);
+      end = performance.now() - start;
+      console.log(`Resolve the promise in ${end}`);
+    });
 }
 
 function getNumber() {
@@ -147,5 +157,4 @@ const p = new MyOwnPromise((resolve, reject) => {
   else resolve("The promise is now resolved as number is not divisible by 5");
 });
 
-const durationOfPromise = measure(p);
-console.log(`Settling the promise took us ${durationOfPromise}`);
+runPromiseWithTime(p);
