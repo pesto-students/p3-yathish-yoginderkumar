@@ -1,0 +1,15 @@
+.todoDashboardContainer {
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 6%;
+}
+
+.inputField {
+  height: 40px;
+  text-align: center;
+  width: 80%;
+}
+
+.btnAdd {
+  width: 20%;
+}
