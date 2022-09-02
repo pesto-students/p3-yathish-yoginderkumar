@@ -10,6 +10,7 @@ const tabs = [
 
 function App() {
   const [currentActiveTab, setCurrentActiveTab] = useState("home");
+  console.log("RENDEE");
   return (
     <div className="App ">
       <nav className="flex flex-wrap px-8 py-4 justify-around items-center bg-[#282c34] text-xl font-bold text-teal-50">
